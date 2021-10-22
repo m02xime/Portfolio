@@ -1,27 +1,40 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #282c34;
+  background-image: url('./img/fond.png');
+  font-size: calc(10px + 1vmin);
+  color: white;
+  overflow-x: hidden;
+}
+
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +48,123 @@
   to {
     transform: rotate(360deg);
   }
+}
+canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+.fo-links li{
+  background-color: #282c34;
+  border-radius: 15px;
+  transition: .5s;
+}
+
+.fo-links li:hover{
+  background-color: #242629;
+}
+/* home */
+
+
+.me{
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.marg{
+  margin-top: 200px;
+}
+.me p{
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.5rem;
+  transition: 5s;
+
+}
+.me p:hover{
+  color: #808080;
+  transition: 1s;
+}
+
+.me a{
+  display: inline-block;
+  padding: 15px 30px;
+  border: solid #FFF 2px;
+  transform: perspective(1px) translateZ(0);
+  transition: 0.4s;
+}
+
+.me a::after {
+  background:rgb(255,90,20);
+  clip-path: inset(0 100% 0 0);
+  opacity:1;
+  transition:0.4s;
+}
+
+.me a:hover::after {
+  clip-path: inset(0 0 0 0);
+}
+
+.me a:hover{
+  background-color: rgba(0, 0, 0, 0.493);
+  border: solid rgb(3, 3, 3) 2px;
+}
+.photo{
+  width: 30%;
+}
+.pp{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 180px;
+  background-color: #202124;
+}
+
+* {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.about{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.5em;
 }

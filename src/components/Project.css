@@ -1,0 +1,51 @@
+
+
+.project{
+    margin: 320px 0;
+
+}
+.works{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project h2{
+    width: 100%;
+}
+
+.cart{
+    height: 300px;
+    width: 300px;
+    margin: 0 10px;
+    background-color: rgb(19, 19, 19);
+    border: rgb(255, 255, 255) solid 3px;
+    transition: 1s;
+}
+
+.cart:hover{
+    background-color:transparent  ;
+    transform:skew(0, 2deg) ;
+    transition: .7s;
+}
+
+
+
+
+.github_link{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    margin-right: 5px;
+}
+.github_link img{
+    filter: invert(1);
+    padding: 5px 0;
+    height: 25px;
+    transition: .3s;
+}
+
+.github_link img:hover{
+    filter: invert(0);
+}
+
