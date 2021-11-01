@@ -27,6 +27,14 @@
     display: flex;
     justify-content: center;
 }
+
+.fo-links li{
+    transition: .5s;
+  }
+  
+  .fo-links li:hover{
+    filter: invert(.5);
+  }
 .company-name{
     font-size: 1.6rem;
     margin-top: 0.5rem;

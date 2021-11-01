@@ -57,15 +57,7 @@ canvas{
   z-index: 0;
 }
 
-.fo-links li{
-  background-color: #282c34;
-  border-radius: 15px;
-  transition: .5s;
-}
 
-.fo-links li:hover{
-  background-color: #242629;
-}
 /* home */
 
 
